@@ -1,6 +1,6 @@
 {
   "name": "plott-wifi-scanner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Scans surrounding area for wireless access points and routers.",
   "main": "index.js",
   "scripts": {
