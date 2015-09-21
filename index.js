@@ -18,7 +18,10 @@ var wifiscanner = require('node-wifiscanner');
 
 module.exports = function(callback){
   wifiscanner.scan(function(err, data){
-  	if (err) throw new Error (err);
-  	return callback(err, data);
+  	if (err){
+      callback(err, null);
+      return;
+    }
+  	return callback(null, data);
   });
 }
